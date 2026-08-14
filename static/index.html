@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scribble Story</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1 class="title">Scribble Story</h1>
+      <span class="stack-badge">Gemini 2.5 Flash + Bulbul v3</span>
+    </header>
+
+    <main class="main">
+      <section class="canvas-panel">
+        <div class="canvas-card">
+          <div class="canvas-wrap">
+            <canvas id="drawCanvas" width="800" height="500"></canvas>
+            <p class="canvas-placeholder" id="canvasPlaceholder">Start drawing</p>
+          </div>
+
+          <div class="controls-row">
+          <div class="color-palette" id="colorPalette">
+            <button class="swatch active" data-color="#1a1a1a" style="background:#1a1a1a"></button>
+            <button class="swatch" data-color="#6b7280" style="background:#6b7280"></button>
+            <button class="swatch" data-color="#ef4444" style="background:#ef4444"></button>
+            <button class="swatch" data-color="#f97316" style="background:#f97316"></button>
+            <button class="swatch" data-color="#14b8a6" style="background:#14b8a6"></button>
+            <button class="swatch" data-color="#22c55e" style="background:#22c55e"></button>
+            <button class="swatch" data-color="#eab308" style="background:#eab308"></button>
+            <button class="swatch" data-color="#3b82f6" style="background:#3b82f6"></button>
+            <button class="swatch" data-color="#8b5cf6" style="background:#8b5cf6"></button>
+            <button class="swatch" data-color="#ec4899" style="background:#ec4899"></button>
+          </div>
+
+          <div class="brush-controls">
+            <label for="brushSize">Brush</label>
+            <input type="range" id="brushSize" min="2" max="24" value="6" />
+            <button id="undoBtn" title="Undo" aria-label="Undo">&#8630;</button>
+            <button id="clearBtn" title="Clear" aria-label="Clear">&#128465;</button>
+          </div>
+        </div>
+        </div>
+
+        <div class="submit-row">
+          <select id="languageSelect">
+            <option value="en-IN">English</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="bn-IN">Bengali</option>
+            <option value="ta-IN">Tamil</option>
+            <option value="te-IN">Telugu</option>
+            <option value="gu-IN">Gujarati</option>
+            <option value="kn-IN">Kannada</option>
+            <option value="ml-IN">Malayalam</option>
+            <option value="mr-IN">Marathi</option>
+            <option value="pa-IN">Punjabi</option>
+            <option value="od-IN">Odia</option>
+          </select>
+          <button id="makeStoryBtn" class="make-story-btn" disabled><span class="make-story-icon">&#8645;</span> Make story</button>
+          <button id="stopBtn" class="stop-btn" hidden>&#9632; Stop</button>
+        </div>
+
+        <div class="story-card" id="storyCard" style="display: none;">
+          <h3 class="story-title">Your Story</h3>
+          <div class="story-content" id="storyContent"></div>
+          <div class="language-chips" id="languageChips">
+            <button class="chip active" data-lang="en-IN">English</button>
+            <button class="chip" data-lang="hi-IN">Hindi</button>
+            <button class="chip" data-lang="bn-IN">Bengali</button>
+            <button class="chip" data-lang="ta-IN">Tamil</button>
+            <button class="chip" data-lang="te-IN">Telugu</button>
+            <button class="chip" data-lang="gu-IN">Gujarati</button>
+            <button class="chip" data-lang="kn-IN">Kannada</button>
+            <button class="chip" data-lang="ml-IN">Malayalam</button>
+            <button class="chip" data-lang="mr-IN">Marathi</button>
+            <button class="chip" data-lang="pa-IN">Punjabi</button>
+            <button class="chip" data-lang="od-IN">Odia</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="stack-panel" id="stackPanel">
+        <h2 class="stack-heading">Stack</h2>
+        <div class="model-card model-card--tts">
+          <div class="model-card-label">TTS</div>
+          <div class="model-card-name">Bulbul v3</div>
+        </div>
+        <div class="model-card model-card--vlm">
+          <div class="model-card-label">VLM</div>
+          <div class="model-card-name">Gemini 2.5 Flash</div>
+        </div>
+        <div class="stack-status" id="stackStatus">Ready to play.</div>
+        <div class="metrics-row">
+          <div class="metric">
+            <div class="metric-label" title="Sarvam only: text sent to Bulbul until the first audio comes back">TTS TTFA</div>
+            <div class="metric-value" id="metricTtfa">&mdash;</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label" title="Gemini 2.5 Flash writing the story">VLM generation</div>
+            <div class="metric-value" id="metricVlm">&mdash;</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label" title="Until the last audio byte arrives - the narration keeps playing well past this">Total</div>
+            <div class="metric-value" id="metricTotal">&mdash;</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

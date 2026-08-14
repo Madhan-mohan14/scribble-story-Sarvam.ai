@@ -1,0 +1,9 @@
+# gcloud uses THIS file (not .dockerignore) to decide what to upload for
+# --source builds. Without it the whole .venv gets uploaded, which turns a
+# fast deploy into a multi-minute one.
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.git/

@@ -1,0 +1,12 @@
+# Never ship secrets or local state into the image
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+test_app.py
+README.md
+Dockerfile
+.dockerignore
+.git/
+.gitignore

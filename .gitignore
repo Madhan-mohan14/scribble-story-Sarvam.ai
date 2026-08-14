@@ -1,0 +1,26 @@
+# Secrets — never commit these
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[oc]
+*.pyc
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Audio written by the examples/ scripts
+rest_output.wav
+stream_output.mp3
+ws_output.mp3
