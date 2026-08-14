@@ -19,8 +19,21 @@ The story is written by **Gemini 2.5 Flash** looking at the drawing, and narrate
 
 ---
 
+## 🎧 Start here — the codelab
+
+**[Text to Speech with Sarvam Bulbul v3 →](https://sarvam-bulbul-tts-gicphaimgq-uc.a.run.app)**
+
+Bulbul v3 is one model with **three different APIs**, and choosing the wrong one is the most common reason a voice app feels sluggish. The codelab walks all three — REST, HTTP stream, and WebSocket — with short scripts you run yourself and hear the difference in.
+
+By the end you'll know which one to reach for and why, and you'll have three working examples to keep. Nine steps, roughly 30 minutes, no prior voice-AI experience assumed. It closes with the app in this repo as the case that genuinely needs the third.
+
+> This is my first codelab. If a step trips you up or something reads unclear, please [open an issue](https://github.com/Madhan-mohan14/Sarvam-AI/issues) — I'd love to make it better.
+
+---
+
 ## Contents
 
+- [Start here — the codelab](#-start-here--the-codelab)
 - [What it does](#what-it-does)
 - [How it works](#how-it-works)
 - [Quick start](#quick-start)
