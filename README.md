@@ -27,13 +27,24 @@ Bulbul v3 is one model with **three different APIs**, and choosing the wrong one
 
 By the end you'll know which one to reach for and why, and you'll have three working examples to keep. Nine steps, roughly 30 minutes, no prior voice-AI experience assumed. It closes with the app in this repo as the case that genuinely needs the third.
 
-> This is my first codelab, built as a personal project — I'm not affiliated with Sarvam AI. If a step trips you up or something reads unclear, [open an issue](https://github.com/Madhan-mohan14/Sarvam-AI/issues) or email me at **madhanmohan1413@gmail.com** — I'd love to make it better.
+> This is my first codelab. If a step trips you up or something reads unclear, [open an issue](https://github.com/Madhan-mohan14/Sarvam-AI/issues) or email me at **madhanmohan1413@gmail.com** — I'd love to make it better.
+
+---
+
+## Disclaimer
+
+**This is an independent, unofficial project. It is not affiliated with, endorsed by, or maintained by Sarvam AI.**
+
+I built it to learn their text-to-speech APIs and to share what I worked out along the way. "Sarvam", "Bulbul", and "Saaras" are names belonging to Sarvam AI and are used here only to describe which APIs the project calls. Anything inaccurate here is mine, not theirs — please report it to me rather than to Sarvam.
+
+For the official documentation, always go to **[docs.sarvam.ai](https://docs.sarvam.ai)**.
 
 ---
 
 ## Contents
 
 - [Start here — the codelab](#-start-here--the-codelab)
+- [Disclaimer](#disclaimer)
 - [What it does](#what-it-does)
 - [How it works](#how-it-works)
 - [Quick start](#quick-start)
