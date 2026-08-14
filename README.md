@@ -27,7 +27,7 @@ Bulbul v3 is one model with **three different APIs**, and choosing the wrong one
 
 By the end you'll know which one to reach for and why, and you'll have three working examples to keep. Nine steps, roughly 30 minutes, no prior voice-AI experience assumed. It closes with the app in this repo as the case that genuinely needs the third.
 
-> This is my first codelab. If a step trips you up or something reads unclear, [open an issue](https://github.com/Madhan-mohan14/Sarvam-AI/issues) or email me at **madhanmohan1413@gmail.com** — I'd love to make it better.
+> This is my first codelab. If a step trips you up or something reads unclear, [open an issue](https://github.com/Madhan-mohan14/scribble-story-Sarvam.ai/issues) or email me at **madhanmohan1413@gmail.com** — I'd love to make it better.
 
 ---
 
@@ -103,8 +103,8 @@ Language switching reuses the cached story text: it is translated with Sarvam Tr
 **1. Clone**
 
 ```bash
-git clone https://github.com/Madhan-mohan14/Sarvam-AI.git
-cd Sarvam-AI
+git clone https://github.com/Madhan-mohan14/scribble-story-Sarvam.ai.git
+cd scribble-story-Sarvam.ai
 ```
 
 **2. Install**
